@@ -134,7 +134,9 @@ def getMovimento():
         if mov["codigoMovimento"] == codigo:
             # data = datetime.strptime(mov['data'], "%d/%m/%Y %H:%M:%S")
             print(f"Código Movimento: {mov['codigoMovimento']} - Código Produto: {mov['codigoProduto']} - Tipo: {mov['tipoMovimento']} - Quantidade: {mov['quantidade']} - Data: {mov['data']}")
-    
+            print("Pressione uma tecla...")
+            input()
+            return
     print("❌ Movimento não encontrado!\n")
     print("Pressione uma tecla...")
     input()
